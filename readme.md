@@ -93,3 +93,23 @@ background-color: $cor-secundaria;
         @include cor-e-texto($cor-secundaria, $cor-principal)
     }
 ```
+
+<h2>Partial</h2>
+
+<p>No Sass conseguimos particionar os códigos em arquivos, então não vai ficar algo muito grande em código, podemos dividir isso em outros arquivos e chamar no scss principal, usando:</p>
+
+```
+@import 'caminho do arquivo';
+```
+
+<p>Para dividir em outros arquivos, existe um jeito, por exemplo, para indicar a fonte do nosso site, criamos um novo arquivo dentro de uma nova pasta com o nome "abstract" e o arquivo vem com um "_" antes do nome, para indicar que é uma partial.</p>
+
+<h2>Componentes</h2>
+
+<p>Pensando em deixar o nosso código mais organizado e limpo, vamos criar uma pasta com o nome "components" e dividir nosso site em etapas, para ir estilizando cada coisa separadamente. Por exemplo: navbar, menu, etc.</p>
+
+<p>Pensando no navbar, criamos o arquivo em scss com um _ antes do nome, pois é uma partial, após isso chamamos a partial no nosso style.scss</p>
+
+```
+@import './components/navbar';
+```
