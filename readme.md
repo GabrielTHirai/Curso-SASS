@@ -113,3 +113,23 @@ background-color: $cor-secundaria;
 ```
 @import './components/navbar';
 ```
+
+<h2>Variaveis em partial</h2>
+
+<p>Para que a gente não tenha que criar variáveis novas todas as vezes que criamos um scss, precisamos criar uma partial com todas as variáveis, e quando quisermos usar é só importar a partial e puxar a variável.</p>
+
+<p>Por enquanto só guardamos fonte e cores na partial de variáveis. Para puxar a partial temos que realizar o seguinte procedimento:</p>
+
+```
+@import './variaveis';
+```
+
+<p>Isso vai servir quando o arquivo estiver na mesma parta que o variáveis, nesse caso criamos a partial de variáveis em abstract, e o _base.scss está na mesma pasta </p>
+
+```
+@import '../abstract/variaveis';
+```
+
+<p>Nesse caso usamos para arquivos que estão em outras pastas, pois precisamos navegar entre as pastas.</p>
+
+<p>Já vimos como criar a variável e chama-la, então por isso eu não vou colocar aqui.</p>
