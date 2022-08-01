@@ -133,3 +133,13 @@ background-color: $cor-secundaria;
 <p>Nesse caso usamos para arquivos que estão em outras pastas, pois precisamos navegar entre as pastas.</p>
 
 <p>Já vimos como criar a variável e chama-la, então por isso eu não vou colocar aqui.</p>
+
+<h2>Seletor &</h2>
+
+<p>Vamos pensar na estilização utilizando o hover, no SASS existe um jeito de fazer isso sem ter que escrever muita coisa. É com o seletor &.</p>
+
+```
+    &:hover{
+        border-bottom: 2px solid $cor-secundaria;
+    }
+```
